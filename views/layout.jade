@@ -15,25 +15,23 @@ html.no-js(lang='en')
     a(href='http://github.com/aaronpowell/html2jade-website')
       img(style='position: absolute; top: 0; right: 0; border: 0; z-index: 50;', src='http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png', alt='Fork me on GitHub')
 
-    != body
+    block content
 
     footer
-        | A
-        a(href='http://jade-lang.com', title='Jade') Jade
-        | &nbsp;+
+        | A&nbsp;
+        a(href='http://jade-lang.com', title='Jade') Jade@0.31.2
+        | &nbsp;+&nbsp;
         a(href='http://github.com/aaronpowell/html2jade-website') GitHub
-        | &nbsp;+
-        a(href='http://expressjs.com/') Express.js
-        | &nbsp;+
-        a(href='http://heroku.com') Heroku
-        | &nbsp;experiment by
+        | &nbsp;+&nbsp;
+        a(href='http://expressjs.com/') Express.js@3.2.6
+        | &nbsp;experiment by&nbsp;
         a(href='http://aaron-powell.com') Aaron Powell
         | .
 
-    script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js")
-    script(src="/app.js")
+    script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js").
+    script(src="/app.js").
 
-    script(type='text/javascript')
+    script(type='text/javascript').
         var _gaq = _gaq || [];
           _gaq.push(['_setAccount', 'UA-20152461-4']);
           _gaq.push(['_trackPageview']);
