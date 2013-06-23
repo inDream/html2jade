@@ -15,15 +15,15 @@
             if (!/<html>/.test(html)) {
                 result.jade = result.jade
                                 .replace('html\n', '')
-                                .replace(/^\s\s/, '')
-                                .replace(/\n\s\s/, '\n');
+                                .replace(/^\s\s/g, '')
+                                .replace(/\n\s\s/g, '\n');
             }
 
             if (!/<body>/.test(html)) {
                 result.jade = result.jade
                                 .replace(/.*body\n/, '')
-                                .replace(/^\s\s/, '')
-                                .replace(/\n\s\s/, '\n');
+                                .replace(/^\s\s/g, '')
+                                .replace(/\n\s\s/g, '\n');
             };
 
 
