@@ -37,8 +37,8 @@ app.get('/', function (req, res) {
     res.render('index');
 });
 
-var ip = process.env.IP;
-var port = process.env.PORT;
+var ip = process.env.IP || '0.0.0.0';
+var port = process.env.PORT || 80;
 http.createServer(app).listen(port, ip, function () {
   console.log("Express server listening on port " + ip + ':'+ port + '. Node version: '+ process.version);
 });
